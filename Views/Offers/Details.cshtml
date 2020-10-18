@@ -1,0 +1,99 @@
+﻿@model LuxuryMVC.Models.Offer
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Offer</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Desc1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Desc1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Desc2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Desc2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Desc3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Desc3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Desc4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Desc4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Interval)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Interval)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Link)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Link)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Body)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Body)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TemplateId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TemplateId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
